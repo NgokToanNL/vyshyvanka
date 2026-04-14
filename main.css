@@ -35,6 +35,8 @@ html {
 
 
 body {
+    font-family: 'Marope', sans-serif;
+    font-weight: 400;
     background-color: #1C2225;
     color: #FCF9F9;
 }
@@ -46,6 +48,8 @@ body {
 
 .header__container {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .header__nav {
@@ -55,6 +59,14 @@ body {
 
 .header__nav-list {
     display: flex;
+    align-items: center;
     gap: 25px;
     text-transform: uppercase;
+}
+
+.header__logo {
+    width: 44px;
+    height: 44px;
+    fill: #ECD979;
+    border: none;
 }
