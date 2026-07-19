@@ -1,9 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
 *,
 *::before,
 *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Manrope", sans-serif;
+}
+
+p {
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
 }
 
 img {
@@ -20,6 +37,13 @@ ol {
 a {
     text-decoration: none;
     color: inherit;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.btn {
+    font-size: 16px;
+    font-weight: 600;
 }
 
 input,
@@ -36,37 +60,87 @@ html {
 
 body {
     font-family: 'Marope', sans-serif;
-    font-weight: 400;
     background-color: #1C2225;
     color: #FCF9F9;
 }
 
 .container {
-    max-width: 1200px;
-    margin: auto 100px;
+    max-width: 1240px;
+    margin: 0 auto;
 }
 
-.header__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+/* header */
 
-.header__nav {
+.header .container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
 }
 
-.header__nav-list {
+.header__navigation {
     display: flex;
     align-items: center;
-    gap: 25px;
-    text-transform: uppercase;
+    gap: 60px;
 }
 
 .header__logo {
     width: 44px;
+    height: 39px;
+}
+
+.header__nav--list {
+    display: flex;
+    gap: 25px;
+}
+
+.header__nav--item {}
+
+.header__nav--link {
+    text-transform: uppercase;
+}
+
+.header__nav--link:hover {
+    color: #ECD979;
+}
+
+.header__cont {
+    display: flex;
+}
+
+.header__cont--list {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.header__cont--link-phone {
+    margin-right: 8px;
+    padding: 14px 28px;
+    width: 193px;
+    height: 48px;
+    border: 1px solid #FCF9F91A;
+    border-radius: 15px;
+}
+
+.header__cont--item {}
+
+.header__cont--link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
     height: 44px;
-    fill: #ECD979;
-    border: none;
+    border: 1px solid #FCF9F91A;
+    border-radius: 15px;
+}
+
+.header__cont--link svg path {
+    fill: #FCF9F9;
+}
+
+.header__cont--icon {
+    width: 44px;
+    height: 44px;
+    fill: #FCF9F91A;
 }
